@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1AEFC3DE-B487-4396-B80B-2AA38580B9B1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>words</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C6C3B7042FF59BF07937485382A3B4964424CBE5</key>
+		<string>github.com:sadams1/wordsearch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>words.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C6C3B7042FF59BF07937485382A3B4964424CBE5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:sadams1/wordsearch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C6C3B7042FF59BF07937485382A3B4964424CBE5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C6C3B7042FF59BF07937485382A3B4964424CBE5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>words</string>
+		</dict>
+	</array>
+</dict>
+</plist>
