@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="5000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PackageViewController">
+            <connections>
+                <outlet property="cellGame" destination="2" id="4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PackageGameCell" id="2" customClass="PackageGameCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="iUh-fo-T2D">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                        <rect key="frame" x="130" y="20" width="532" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="OkJ-DK-zht"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="table_view_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                        <rect key="frame" x="0.0" y="128" width="768" height="1"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="packages.png" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                        <rect key="frame" x="32" y="31" width="67" height="67"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                        <rect key="frame" x="719" y="40" width="38" height="47"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                        <rect key="frame" x="130" y="73" width="384" height="47"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="384" id="gsL-bW-v6m"/>
+                            <constraint firstAttribute="height" constant="47" id="suM-2Q-h8d"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="13" firstAttribute="leading" secondItem="9" secondAttribute="trailing" constant="31" id="5RO-tR-BIw"/>
+                    <constraint firstAttribute="centerY" secondItem="9" secondAttribute="centerY" id="7tf-c7-RAo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="10" secondAttribute="trailing" constant="3" id="CmM-gy-bWa"/>
+                    <constraint firstItem="13" firstAttribute="top" secondItem="6" secondAttribute="bottom" constant="8" id="QK6-5L-uXb"/>
+                    <constraint firstItem="6" firstAttribute="top" secondItem="iUh-fo-T2D" secondAttribute="topMargin" constant="12" id="ayg-Mo-FD7"/>
+                    <constraint firstItem="9" firstAttribute="leading" secondItem="iUh-fo-T2D" secondAttribute="leading" constant="32" id="d8x-F7-3nJ"/>
+                    <constraint firstAttribute="centerY" secondItem="10" secondAttribute="centerY" constant="1" id="eEn-IN-s4e"/>
+                    <constraint firstItem="6" firstAttribute="leading" secondItem="9" secondAttribute="trailing" constant="31" id="mD9-v3-qSh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewIcon" destination="9" id="12"/>
+                <outlet property="labelName" destination="6" id="11"/>
+                <outlet property="viewStars" destination="13" id="14"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.png" width="38" height="47"/>
+        <image name="packages.png" width="67" height="67"/>
+        <image name="table_view_separator.png" width="768" height="1"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

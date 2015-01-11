@@ -1,0 +1,115 @@
+/* 
+  Localization.strings
+  words
+
+  Created by Marius Rott on 18/02/14.
+  Copyright (c) 2014 mrott. All rights reserved.
+*/
+
+"wordSearch" = "Wize Kids Word Search";
+"buttonUnlockPackages" = "Get more Packages";
+"packages" = "Packages";
+"quests" = "Quests";
+"Level1" = "Level1";
+"Movies" = "Movies";
+"Completed %d/%d puzzles" = "%d/%d puzzles completed";
+"Complete 3 different sessions in under 03:00 minutes each" = "Complete 3 different sessions in under 03:00 minutes each";
+"Completed" = "Completed";
+"Scary Movie Titles" = "Scary Movie Titles";
+"bestTime" = "Best time:";
+"costCoins" = "Cost: %d coins";
+"cancel" = "Cancel";
+"OK" = "OK";
+"useHint" = "Use Hint?";
+"useHintMsg" = "Reveal the first letter of a word";
+"removeChars" = "Remove letters?";
+"removeCharsMsg" = "Remove some letters to make the search easier";
+"resolvePuzzle" = "Reveal all Words?";
+"resolvePuzzleMsg" = "Reveal all the words";
+"gamePaused" = "Game Paused";
+"resumeGame" = "Resume Game";
+"congratulations" = "Congratulations!";
+"nextGame" = "Next Game";
+"shareAndWin" = "Share and win Coins!";
+"share" = "Share";
+"%d points" = "%d points";
+"New Record: %@" = "New Record: %@";
+"Time: %@" = "Time: %@";
+"restart" = "Restart";
+"settings" = "Settings";
+"backToPackage" = "Back to Package";
+"moreGames" = "More Games";
+"notifications" = "Notifications";
+"sounds" = "Sounds";
+"music" = "Music";
+"restorePurchases" = "Restore Purchases";
+"about" = "About";
+"coinsDesc1" = "1000 Coins";
+"coinsDesc2" = "3000 Coins + 1000 Free!";
+"coinsDesc3" = "5000 Coins + 3000 Free!";
+"coinsDesc4" = "10000 Coins + 10000 Free!";
+"coins1" = "Basic Pack";
+"coins2" = "Booster Pack";
+"coins3" = "Super Pack";
+"coins4" = "Ultimate Pack";
+"buy" = "Buy";
+"on" = "On";
+"off" = "Off";
+"raterTitle" = "Enjoying %@?";
+"raterMsg" = "If you like %@ and wanna bring more players on-board - rate it with 5 stars too. Every rating helps!";
+"raterNotNow" = "Not now, Thanks";
+"raterRateNow" = "Rate Now";
+"raterMaybeLater" = "Maybe Later";
+
+
+"restoredPurchasesMsg" = "You have successfully restored your purchases!";
+"purchaseError" = "Purchase error";
+"restoreErrorMsg" = "There was an error completing your restore. Please try again later!";
+"purchaseErrorMsg" = "There was an error completing your purchase. Please try again later!";
+"networkConnection" = "Network Connection";
+"networkConnectionMsg" = "Please connect to internet to have access to Coins purchases!";
+"coins" = "Coins";
+"coinsMsg" = "You don't have enough coins!";
+"getCoinsNow" = "Get coins Now!";
+"winCoins" = "Win %d Coins!";
+"watchVideos" = "Watch %d videos";
+"videoAds" = "Video Ads";
+"videoAdsMsg" = "No video ads are available right now. Please come back later!";
+"receivedCoinsMsg" = "You received %d Coins";
+"freeCoins" = "Free Coins";
+"reviewApp" = "Review App";
+"email" = "Email Support";
+"unlockAllPackages" = "Unlock All Packages";
+"unlockPackages" = "Unlock Packages";
+
+"You completed the Quest: %@" = "You completed the Quest: %@";
+"You completed: %@" = "You completed: %@";
+"Complete 3 different sessions in under 03:00 minutes each" = "Complete 3 different sessions in under 03:00 minutes each";
+"Complete 2 consecutive sessions in under 03:00 minutes each" = "Complete 2 consecutive sessions in under 03:00 minutes each";
+"Complete 1 puzzle" = "Complete 1 puzzle";
+"Complete 5 different sessions in under 02:30 minutes each" = "Complete 5 different sessions in under 02:30 minutes each";
+"Complete 3 consecutive sessions in under 02:30 minutes each" = "Complete 3 consecutive sessions in under 02:30 minutes each";
+"Complete 2 puzzles" = "Complete 2 puzzles";
+"Complete 5 different sessions in under 02:15 minutes each" = "Complete 5 different sessions in under 02:15 minutes each";
+"Complete 3 consecutive sessions in under 02:15 minutes each" = "Complete 3 consecutive sessions in under 02:15 minutes each";
+"Complete 3 puzzles" = "Complete 3 puzzles";
+"Complete 5 different sessions in under 02:00 minutes each" = "Complete 5 different sessions in under 02:00 minutes each";
+"Complete 3 consecutive sessions in under 02:00 minutes each" = "Complete 3 consecutive sessions in under 02:00 minutes each";
+"Complete 3 puzzles" = "Complete 3 puzzles";
+"Complete 7 different sessions in under 02:00 minutes each" = "Complete 7 different sessions in under 02:00 minutes each";
+"Complete 5 consecutive sessions in under 02:00 minutes each" = "Complete 5 consecutive sessions in under 02:00 minutes each";
+"Complete 5 puzzles" = "Complete 5 puzzles";
+"Complete 10 different sessions in under 01:45 minutes each" = "Complete 10 different sessions in under 01:45 minutes each";
+"Complete 3 consecutive sessions in under 01:45 minutes each" = "Complete 3 consecutive sessions in under 01:45 minutes each";
+"Complete 7 puzzles" = "Complete 7 puzzles";
+"Complete 10 different sessions in under 01:30 minutes each" = "Complete 10 different sessions in under 01:30 minutes each";
+"Complete 5 consecutive sessions in under 01:45 minutes each" = "Complete 5 consecutive sessions in under 01:45 minutes each";
+"Complete 8 puzzles" = "Complete 8 puzzles";
+
+"Level 1" = "Level 1";
+"Level 2" = "Level 2";
+"Level 3" = "Level 3";
+"Level 4" = "Level 4";
+"Level 5" = "Level 5";
+"Level 6" = "Level 6";
+"Level 7" = "Level 7";

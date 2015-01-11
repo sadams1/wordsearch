@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="cellQuest" destination="2" id="26"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="77" id="2" customClass="HomeQuestCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="edy-ky-KoP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="table_view_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="38">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="quest.png" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-y6-osA">
+                        <rect key="frame" x="20" y="16" width="46" height="46"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCD-Xd-TDm">
+                        <rect key="frame" x="74" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWC-en-8Nn">
+                        <rect key="frame" x="258" y="33" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="IWC-en-8Nn" secondAttribute="trailing" constant="20" id="HV7-ni-Czb"/>
+                    <constraint firstItem="KCD-Xd-TDm" firstAttribute="top" secondItem="edy-ky-KoP" secondAttribute="top" constant="12" id="LQ2-yF-qv5"/>
+                    <constraint firstAttribute="centerY" secondItem="2vU-y6-osA" secondAttribute="centerY" constant="-1" id="Ovk-bm-DQq"/>
+                    <constraint firstItem="IWC-en-8Nn" firstAttribute="top" secondItem="KCD-Xd-TDm" secondAttribute="bottom" id="ZMh-Zy-TMC"/>
+                    <constraint firstItem="2vU-y6-osA" firstAttribute="leading" secondItem="edy-ky-KoP" secondAttribute="leading" constant="20" id="nvz-4f-S5l"/>
+                    <constraint firstItem="KCD-Xd-TDm" firstAttribute="leading" secondItem="2vU-y6-osA" secondAttribute="trailing" constant="8" id="ygS-Mg-mev"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelCompleted" destination="IWC-en-8Nn" id="0cz-Ev-2tJ"/>
+                <outlet property="labelName" destination="KCD-Xd-TDm" id="zc2-UC-L8n"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="quest.png" width="46" height="46"/>
+        <image name="table_view_separator.png" width="320" height="1"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

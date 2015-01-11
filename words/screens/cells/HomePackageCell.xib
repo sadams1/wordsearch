@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="5000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="cellPackage" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="60" id="2" customClass="HomePackageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="zBs-5e-MRz">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28">
+                        <rect key="frame" x="10" y="15" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="2nW-08-T0Q"/>
+                            <constraint firstAttribute="width" constant="46" id="epp-vp-wU0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68">
+                        <rect key="frame" x="74" y="28" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87">
+                        <rect key="frame" x="74" y="47" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="table_view_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="100">
+                        <rect key="frame" x="0.0" y="76" width="320" height="1"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="57">
+                        <rect key="frame" x="297" y="26" width="19" height="23"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="68" firstAttribute="top" secondItem="zBs-5e-MRz" secondAttribute="top" constant="28" id="2B6-qg-L0b"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="57" secondAttribute="trailing" constant="-4" id="2Ew-CY-ewH"/>
+                    <constraint firstItem="68" firstAttribute="leading" secondItem="28" secondAttribute="trailing" constant="18" id="3PV-RC-Wku"/>
+                    <constraint firstAttribute="centerY" secondItem="57" secondAttribute="centerY" constant="0.5" id="9je-PA-Dc2"/>
+                    <constraint firstItem="87" firstAttribute="top" secondItem="68" secondAttribute="bottom" constant="-2" id="E49-eE-WSQ"/>
+                    <constraint firstItem="28" firstAttribute="leading" secondItem="zBs-5e-MRz" secondAttribute="leading" constant="15" id="h30-ym-4NR"/>
+                    <constraint firstAttribute="centerY" secondItem="28" secondAttribute="centerY" id="kmE-Jp-ZL8"/>
+                    <constraint firstItem="87" firstAttribute="leading" secondItem="28" secondAttribute="trailing" constant="18" id="lEe-Ko-BNP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewIcon" destination="28" id="97"/>
+                <outlet property="labelDescription" destination="87" id="98"/>
+                <outlet property="labelName" destination="68" id="99"/>
+            </connections>
+            <point key="canvasLocation" x="435" y="319.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.png" width="12" height="22"/>
+        <image name="table_view_separator.png" width="320" height="1"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

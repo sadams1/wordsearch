@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="buttonStorePackages" destination="PYi-8p-P8H" id="CfM-gl-SAL"/>
+                <outlet property="constraintBannerHeight" destination="0eD-lk-dpJ" id="F9E-Go-X2U"/>
+                <outlet property="labelQuestLevelName" destination="270" id="271"/>
+                <outlet property="labelTitle" destination="90" id="95"/>
+                <outlet property="tableView" destination="aGr-KZ-G3S" id="esz-Ba-Ga4"/>
+                <outlet property="view" destination="2" id="3"/>
+                <outlet property="viewBannerContainer" destination="4Ps-7B-PLd" id="1gY-0g-QJt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40">
+                            <rect key="frame" x="32" y="6" width="67" height="67"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="settings_nav_bar.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doButtonSettings:" destination="-1" eventType="touchUpInside" id="44"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                            <rect key="frame" x="669" y="6" width="67" height="67"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="store_nav_bar.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doButtonStore:" destination="-1" eventType="touchUpInside" id="17"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Word Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90">
+                            <rect key="frame" x="335" y="30" width="99" height="20"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.59607843140000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="13" firstAttribute="top" secondItem="47" secondAttribute="top" constant="6" id="B0f-ya-d4u"/>
+                        <constraint firstAttribute="centerY" secondItem="90" secondAttribute="centerY" id="Bt8-bU-Vg8"/>
+                        <constraint firstItem="40" firstAttribute="leading" secondItem="47" secondAttribute="leading" constant="32" id="CYU-5T-a54"/>
+                        <constraint firstItem="40" firstAttribute="top" secondItem="47" secondAttribute="top" constant="6" id="ItR-Ox-zHc"/>
+                        <constraint firstAttribute="centerX" secondItem="90" secondAttribute="centerX" id="K9F-AB-tHs"/>
+                        <constraint firstAttribute="trailing" secondItem="13" secondAttribute="trailing" constant="32" id="Zrb-DZ-qLK"/>
+                        <constraint firstAttribute="height" constant="80" id="f2u-35-UBf"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="270">
+                    <rect key="frame" x="0.0" y="80" width="768" height="77"/>
+                    <color key="backgroundColor" red="0.9992871807" green="1" blue="0.5549726277" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.070588235289999995" green="0.66666666669999997" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aGr-KZ-G3S">
+                    <rect key="frame" x="0.0" y="158" width="768" height="776"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Gje-Lh-Ogc"/>
+                        <outlet property="delegate" destination="-1" id="ufS-VL-Up8"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ps-7B-PLd" customClass="GADBannerView">
+                    <rect key="frame" x="0.0" y="934" width="768" height="90"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="0eD-lk-dpJ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYi-8p-P8H">
+                    <rect key="frame" x="0.0" y="80" width="768" height="77"/>
+                    <color key="backgroundColor" red="0.9992871807" green="1" blue="0.5549726277" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="More Packages">
+                        <color key="titleColor" red="0.070588235289999995" green="0.66666666669999997" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doButtonStorePackages:" destination="-1" eventType="touchUpInside" id="jqe-XR-ii3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4Ps-7B-PLd" secondAttribute="bottom" id="BXx-bz-aa9"/>
+                <constraint firstAttribute="trailing" secondItem="4Ps-7B-PLd" secondAttribute="trailing" id="Bfe-qm-abW"/>
+                <constraint firstItem="270" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="Fez-ev-6HL"/>
+                <constraint firstAttribute="trailing" secondItem="47" secondAttribute="trailing" id="IrH-bN-nKn"/>
+                <constraint firstItem="aGr-KZ-G3S" firstAttribute="top" secondItem="PYi-8p-P8H" secondAttribute="bottom" id="T0K-G1-5cq"/>
+                <constraint firstItem="4Ps-7B-PLd" firstAttribute="top" secondItem="aGr-KZ-G3S" secondAttribute="bottom" id="VH7-nZ-EJD"/>
+                <constraint firstItem="PYi-8p-P8H" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="WR4-kz-jvy"/>
+                <constraint firstItem="47" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="bZH-j9-FBk"/>
+                <constraint firstItem="47" firstAttribute="top" secondItem="2" secondAttribute="top" id="eQA-mn-rw8"/>
+                <constraint firstItem="aGr-KZ-G3S" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="eb3-kr-Fps"/>
+                <constraint firstAttribute="trailing" secondItem="aGr-KZ-G3S" secondAttribute="trailing" id="gvF-ci-fiq"/>
+                <constraint firstItem="4Ps-7B-PLd" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="qDq-gN-FWs"/>
+                <constraint firstAttribute="trailing" secondItem="PYi-8p-P8H" secondAttribute="trailing" id="tpy-cA-5YV"/>
+                <constraint firstAttribute="trailing" secondItem="270" secondAttribute="trailing" id="zMg-XR-JO0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="settings_nav_bar.png" width="67" height="67"/>
+        <image name="store_nav_bar.png" width="67" height="67"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

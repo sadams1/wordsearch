@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="buttonStorePackages" destination="E6y-sZ-xpD" id="0kL-lq-yuP"/>
+                <outlet property="constraintBannerHeight" destination="4HF-L5-ZVy" id="ux0-lt-ILc"/>
+                <outlet property="labelQuestLevelName" destination="170" id="238"/>
+                <outlet property="labelTitle" destination="173" id="240"/>
+                <outlet property="tableView" destination="55P-gf-O7r" id="Oh6-SP-kgZ"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="viewBannerContainer" destination="wgK-h3-6LB" id="c7Y-4n-BdK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="162">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="167">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="172">
+                            <rect key="frame" x="15" y="12" width="46" height="46"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="settings_nav_bar.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doButtonSettings:" destination="-1" eventType="touchUpInside" id="246"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="171">
+                            <rect key="frame" x="259" y="12" width="46" height="46"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="store_nav_bar.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doButtonStore:" destination="-1" eventType="touchUpInside" id="247"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Word Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="173">
+                            <rect key="frame" x="111" y="25" width="99" height="20"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.59607843140000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="171" secondAttribute="trailing" constant="15" id="Ada-8v-549"/>
+                        <constraint firstItem="172" firstAttribute="top" secondItem="167" secondAttribute="top" constant="12" id="JjU-Sb-izp"/>
+                        <constraint firstAttribute="height" constant="69" id="Mf5-pr-Zdi"/>
+                        <constraint firstAttribute="centerY" secondItem="173" secondAttribute="centerY" constant="-0.5" id="V7Q-NA-wcs"/>
+                        <constraint firstAttribute="centerX" secondItem="173" secondAttribute="centerX" id="W2V-oh-i7L"/>
+                        <constraint firstItem="172" firstAttribute="leading" secondItem="167" secondAttribute="leading" constant="15" id="kOY-tG-AS8"/>
+                        <constraint firstItem="171" firstAttribute="top" secondItem="167" secondAttribute="top" constant="12" id="zEK-ix-9q4"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6y-sZ-xpD">
+                    <rect key="frame" x="0.0" y="69" width="320" height="39"/>
+                    <color key="backgroundColor" red="0.9992871807" green="1" blue="0.5549726277" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="More Packages">
+                        <color key="titleColor" red="0.070588235289999995" green="0.66666666669999997" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doButtonStorePackages:" destination="-1" eventType="touchUpInside" id="7V0-pb-v3d"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NT3-tx-S4R">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgK-h3-6LB" customClass="GADBannerView">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4HF-L5-ZVy"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="55P-gf-O7r">
+                    <rect key="frame" x="0.0" y="110" width="320" height="408"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mD1-U3-In6"/>
+                        <outlet property="delegate" destination="-1" id="EJr-WD-vhs"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="170">
+                    <rect key="frame" x="0.0" y="69" width="320" height="40"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                    <color key="textColor" red="0.70588235294117641" green="0.84705882352941175" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="170" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="3iT-af-dba"/>
+                <constraint firstItem="wgK-h3-6LB" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="5hK-Me-o7w"/>
+                <constraint firstAttribute="trailing" secondItem="167" secondAttribute="trailing" id="7mb-EI-s5t"/>
+                <constraint firstAttribute="trailing" secondItem="wgK-h3-6LB" secondAttribute="trailing" id="8Ta-Zz-hRp"/>
+                <constraint firstItem="55P-gf-O7r" firstAttribute="top" secondItem="E6y-sZ-xpD" secondAttribute="bottom" id="8nK-Ro-Vgw"/>
+                <constraint firstItem="167" firstAttribute="top" secondItem="1" secondAttribute="top" id="DmK-p4-GqV"/>
+                <constraint firstAttribute="bottom" secondItem="wgK-h3-6LB" secondAttribute="bottom" id="UlZ-WQ-a07"/>
+                <constraint firstItem="wgK-h3-6LB" firstAttribute="top" secondItem="55P-gf-O7r" secondAttribute="bottom" id="Ym5-PS-lOB"/>
+                <constraint firstItem="E6y-sZ-xpD" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="asJ-FA-qon"/>
+                <constraint firstAttribute="trailing" secondItem="55P-gf-O7r" secondAttribute="trailing" id="c8d-ph-Pvy"/>
+                <constraint firstItem="55P-gf-O7r" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="dim-gn-AyA"/>
+                <constraint firstAttribute="trailing" secondItem="E6y-sZ-xpD" secondAttribute="trailing" id="jJd-7o-dV2"/>
+                <constraint firstItem="167" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="r09-4w-nJn"/>
+                <constraint firstAttribute="trailing" secondItem="170" secondAttribute="trailing" id="xO0-6p-Z7T"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="48" y="169"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="settings_nav_bar.png" width="46" height="46"/>
+        <image name="store_nav_bar.png" width="46" height="46"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="5000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="cellPackage" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="2" customClass="HomePackageCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="Ji4-j3-Ax3">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                        <rect key="frame" x="130" y="20" width="42" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="o8s-a2-fNu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                        <rect key="frame" x="130" y="73" width="42" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="K2p-HI-uin"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="table_view_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="15">
+                        <rect key="frame" x="0.0" y="128" width="768" height="1"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="packages.png" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                        <rect key="frame" x="32" y="31" width="67" height="67"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                        <rect key="frame" x="719" y="41" width="38" height="47"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="16" secondAttribute="centerY" id="2w7-ou-LxH"/>
+                    <constraint firstItem="15" firstAttribute="leading" secondItem="Ji4-j3-Ax3" secondAttribute="leading" id="7Te-bE-Ck8"/>
+                    <constraint firstAttribute="trailing" secondItem="15" secondAttribute="trailing" id="C8y-L7-rM2"/>
+                    <constraint firstItem="4" firstAttribute="top" secondItem="Ji4-j3-Ax3" secondAttribute="topMargin" constant="12" id="D0Z-ZG-cTQ"/>
+                    <constraint firstItem="4" firstAttribute="leading" secondItem="16" secondAttribute="trailing" constant="31" id="Due-Uw-fiI"/>
+                    <constraint firstItem="9" firstAttribute="leading" secondItem="16" secondAttribute="trailing" constant="31" id="IYr-Ld-TAd"/>
+                    <constraint firstItem="9" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="8" id="U7e-sS-aoX"/>
+                    <constraint firstItem="16" firstAttribute="leading" secondItem="Ji4-j3-Ax3" secondAttribute="leading" constant="32" id="Zr7-Gu-KCQ"/>
+                    <constraint firstAttribute="bottom" secondItem="15" secondAttribute="bottom" id="ckL-Gf-nmE"/>
+                    <constraint firstAttribute="centerY" secondItem="20" secondAttribute="centerY" id="iCx-W8-WDB"/>
+                    <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="11" id="pob-FD-V1D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewIcon" destination="16" id="19"/>
+                <outlet property="labelDescription" destination="9" id="17"/>
+                <outlet property="labelName" destination="4" id="14"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="159"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.png" width="38" height="47"/>
+        <image name="packages.png" width="67" height="67"/>
+        <image name="table_view_separator.png" width="768" height="1"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

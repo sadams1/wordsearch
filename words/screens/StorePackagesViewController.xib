@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StorePackagesViewController">
+            <connections>
+                <outlet property="labelTitle" destination="Zug-oQ-UD6" id="Ler-px-3AJ"/>
+                <outlet property="tableView" destination="uc3-Xv-2Bm" id="y1k-EA-8kd"/>
+                <outlet property="view" destination="4" id="148"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bio-QF-MKc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsa-OE-ALb">
+                            <rect key="frame" x="20" y="25" width="18" height="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="back.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doButtonClose:" destination="-1" eventType="touchUpInside" id="tSt-B5-CYF"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Packages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zug-oQ-UD6">
+                            <rect key="frame" x="123" y="25" width="75" height="20"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.59607843140000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="69" id="8IX-g2-h3w"/>
+                        <constraint firstItem="Rsa-OE-ALb" firstAttribute="leading" secondItem="Bio-QF-MKc" secondAttribute="leading" constant="20" id="Hcy-cW-OXv"/>
+                        <constraint firstAttribute="centerY" secondItem="Rsa-OE-ALb" secondAttribute="centerY" constant="-0.5" id="SZL-8L-B1j"/>
+                        <constraint firstAttribute="centerY" secondItem="Zug-oQ-UD6" secondAttribute="centerY" constant="-0.5" id="lkJ-CJ-NOb"/>
+                        <constraint firstAttribute="centerX" secondItem="Zug-oQ-UD6" secondAttribute="centerX" id="ya4-oi-bFY"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uc3-Xv-2Bm">
+                    <rect key="frame" x="0.0" y="69" width="320" height="499"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MX0-gr-VpU"/>
+                        <outlet property="delegate" destination="-1" id="W2d-L5-4sa"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uc3-Xv-2Bm" secondAttribute="trailing" id="Gei-lz-WVq"/>
+                <constraint firstItem="Bio-QF-MKc" firstAttribute="top" secondItem="4" secondAttribute="top" id="SgS-k7-xSg"/>
+                <constraint firstAttribute="bottom" secondItem="uc3-Xv-2Bm" secondAttribute="bottom" id="T4C-AY-oP8"/>
+                <constraint firstItem="Bio-QF-MKc" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="T4D-vW-5j0"/>
+                <constraint firstItem="uc3-Xv-2Bm" firstAttribute="top" secondItem="Bio-QF-MKc" secondAttribute="bottom" id="kAm-3o-aiB"/>
+                <constraint firstItem="uc3-Xv-2Bm" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="sV4-sc-eg0"/>
+                <constraint firstAttribute="trailing" secondItem="Bio-QF-MKc" secondAttribute="trailing" id="xTC-Lt-XE7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="18" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
